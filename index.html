@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Services Website</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style/styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+  <div class="logo">
+    <img src="images/logoo.png" alt="Logo">
+  </div>
+
+  <ul class="nav-links" id="menu">
+    <li><a href="#">Enterprise</a></li>
+    <li><a href="#">SME</a></li>
+    <li><a href="#">Personal</a></li>
+    <li><a href="#">Resources</a></li>
+    <li><a href="#">Developers</a></li>
+    <li><a href="#">Company</a></li>
+     <li><button class="signin-btn">Sign In</button></li>
+  </ul>
+
+   <button class="signin-btn-desktop">Sign In</button> <!-- desktop -->
+  
+
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+  </div>
+
+
+</nav>
+
+
+  <!-- Hero Section -->
+  <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold text-primary">Welcome to Tech Services</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">
+        We provide cutting-edge technology solutions to help businesses and individuals succeed.  
+        From software development to IT consulting, we’ve got you covered.
+      </p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <a href="#services" class="btn btn-primary btn-lg px-4 me-sm-3">Get Started</a>
+        <a href="#contact" class="btn btn-outline-secondary btn-lg px-4">Contact Us</a>
+      </div>
+    </div>
+    <div class="overflow-hidden" style="max-height: 40vh;">
+      <div class="container px-5">
+        <img src="images/screenshot.png" class="img-fluid border rounded-3 shadow-lg mb-4"
+             alt="Tech illustration" width="700" height="500" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <p class="section-subtitle">We provide innovative tech solutions tailored to your needs.</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-code service-icon"></i>
+          <h3>Web Development</h3>
+          <p>Modern, responsive websites that bring your ideas to life.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-lock service-icon"></i>
+          <h3>Cybersecurity</h3>
+          <p>Protecting your data with cutting-edge security solutions.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-cloud service-icon"></i>
+          <h3>Cloud Solutions</h3>
+          <p>Seamless cloud migration and scalable hosting services.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-mobile-alt service-icon"></i>
+          <h3>App Development</h3>
+          <p>Custom mobile and desktop applications to power your business.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="resources" class="resources">
+  <div class="container">
+    <h2>Resources & Developers</h2>
+    <p class="section-subtitle">Everything you need to get started — from guides to API access.</p>
+
+    <div id="resourcesCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center gap-4 flex-wrap">
+            <div class="resource-card text-center">
+              <i class="fas fa-book resource-icon"></i>
+              <h3>Guides</h3>
+              <p>Step-by-step instructions and tips to help you make the most of our tools.</p>
+              <a href="#" class="resource-link">Explore Guides</a>
+            </div>
+
+            <div class="resource-card text-center">
+              <i class="fas fa-file-alt resource-icon"></i>
+              <h3>Documentation</h3>
+              <p>Clear, detailed documentation to answer your questions and streamline your workflow.</p>
+              <a href="#" class="resource-link">View Docs</a>
+            </div>
+
+            <div class="resource-card text-center">
+              <i class="fas fa-code resource-icon"></i>
+              <h3>APIs</h3>
+              <p>Connect directly with our services and integrate them seamlessly into your projects.</p>
+              <a href="#" class="resource-link">Get Started</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Duplicate carousel-item if you want multiple slides -->
+        <!-- Example second slide -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center gap-4 flex-wrap">
+            <div class="resource-card text-center">
+              <i class="fas fa-book resource-icon"></i>
+              <h3>Guides 2</h3>
+              <p>Another set of guides or tips.</p>
+              <a href="#" class="resource-link">Explore Guides</a>
+            </div>
+            <div class="resource-card text-center">
+              <i class="fas fa-file-alt resource-icon"></i>
+              <h3>Documentation 2</h3>
+              <p>More documentation content.</p>
+              <a href="#" class="resource-link">View Docs</a>
+            </div>
+            <div class="resource-card text-center">
+              <i class="fas fa-code resource-icon"></i>
+              <h3>APIs 2</h3>
+              <p>More API integration options.</p>
+              <a href="#" class="resource-link">Get Started</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#resourcesCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#resourcesCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<section id="testimonials" class="testimonials">
+  <div class="container">
+    <h2>What Our Clients Say</h2>
+    <p class="section-subtitle">Real feedback from people and companies we've helped.</p>
+
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="testimonial-card mx-auto text-center">
+            <p>"Tech Services helped our company migrate to the cloud seamlessly. Their team is professional and knowledgeable!"</p>
+            <h5>- Chinedu Okafor, CEO, LagosTech</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="testimonial-card mx-auto text-center">
+            <p>"Their cybersecurity solutions saved us from potential breaches. Highly recommended!"</p>
+            <h5>- Aisha Bello, IT Manager, Abuja FinTech</h5>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="testimonial-card mx-auto text-center">
+            <p>"The mobile app development team delivered exactly what we envisioned. Fast and reliable service."</p>
+            <h5>- Emeka Nwosu, Product Owner, Kano Apps Ltd</h5>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="cta" class="cta-section">
+  <div class="container text-center">
+    <h2>Ready to Transform Your Business?</h2>
+    <p class="cta-subtitle">Get in touch with our experts today and start your journey with innovative tech solutions.</p>
+    <a href="#contact" class="btn btn-primary btn-lg">Get Started</a>
+    <a href="#contact" class="btn btn-outline-secondary btn-lg">Contact Us</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-left">
+      <h3>Tech Services</h3>
+      <p>Empowering businesses and individuals with innovative technology solutions.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#developers">Developers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Email: info@techservices.com</p>
+      <p>Phone: +234 800 123 4567</p>
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Tech Services. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<!-- Newsletter Modal -->
+<div id="newsletterModal" class="newsletter-modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Join Our Newsletter</h2>
+    <p>Get updates, resources, and tips delivered straight to your inbox.</p>
+    <form id="newsletterForm">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit" class="btn btn-primary">Subscribe</button>
+    </form>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
